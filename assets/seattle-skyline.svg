@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" opacity="0.75">
+  <defs>
+    <linearGradient id="skyGrad" x1="40" y1="0" x2="1160" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e93f9b"></stop>
+      <stop offset="0.55" stop-color="#b06bb8"></stop>
+      <stop offset="1" stop-color="#2fc4a7"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  <g fill="none" stroke="url(#skyGrad)" stroke-width="0.8" opacity="0.22">
+    <path d="M900 300 L1020 180 L1042 196 L1062 178 L1170 300"></path>
+    <path d="M988 216 L1012 216 M1026 216 L1048 216 M1002 198 L1028 198" stroke-width="0.6"></path>
+  </g>
+  <g fill="none" stroke="url(#skyGrad)" stroke-width="0.8" opacity="0.3">
+    <path d="M250 380 L250 330 L285 330 L285 380"></path>
+    <path d="M300 380 L300 318 L330 318 L330 380"></path>
+    <path d="M345 380 L345 308 L378 308 L378 380"></path>
+    <path d="M395 380 L395 322 L428 322 L428 380"></path>
+    <path d="M448 380 L448 298 L480 298 L480 380"></path>
+    <path d="M500 380 L500 286 L532 286 L532 380"></path>
+    <path d="M585 380 L585 262 L615 262 L615 380"></path>
+    <path d="M654 380 L654 252 L684 252 L684 380"></path>
+    <path d="M760 380 L760 240 L795 240 L795 380"></path>
+    <path d="M912 380 L912 262 L946 262 L946 380"></path>
+    <path d="M1030 380 L1030 312 L1064 312 L1064 380"></path>
+  </g>
+
+  
+  <g fill="none" stroke="url(#skyGrad)" stroke-width="1" opacity="0.5">
+    
+    <path d="M1140 380 L1140 326 L1106 314 M1140 342 L1112 318 M1128 380 L1128 330" stroke-width="0.8"></path>
+    <path d="M1178 380 L1178 334 L1148 322 M1178 348 L1152 326" stroke-width="0.8"></path>
+    
+    <path d="M225 380 L225 344 L262 344 L262 380"></path>
+    <path d="M272 380 L272 326 L315 326 L315 380"></path>
+    <path d="M330 380 L330 312 L370 312 L370 380"></path>
+    <path d="M385 380 L385 300 L432 300 L432 380"></path>
+    <path d="M445 380 L445 288 L495 288 L495 380"></path>
+    <path d="M457 294 L457 376 M470 294 L470 376 M483 294 L483 376" stroke-width="0.4" opacity="0.6"></path>
+    <path d="M510 380 L510 272 L555 272 L555 380"></path>
+    <path d="M521 278 L521 376 M532 278 L532 376 M543 278 L543 376" stroke-width="0.4" opacity="0.6"></path>
+    
+    <path d="M570 380 L570 236 L620 236 L620 380"></path>
+    <path d="M582 242 L582 376 M595 242 L595 376 M608 242 L608 376" stroke-width="0.4" opacity="0.6"></path>
+    <path d="M694 380 L694 214 L736 214 L736 380"></path>
+    <path d="M704 220 L704 376 M715 220 L715 376 M726 220 L726 376" stroke-width="0.4" opacity="0.6"></path>
+    <path d="M746 380 L746 230 L790 230 L790 380"></path>
+    <path d="M757 236 L757 376 M768 236 L768 376 M779 236 L779 376" stroke-width="0.4" opacity="0.6"></path>
+    <path d="M798 380 L798 248 L826 248 L826 380"></path>
+  </g>
+
+  
+  <g fill="none" stroke="url(#skyGrad)" stroke-width="1.2">
+    
+    <path d="M116 372 L184 372 M120 372 L120 380 M180 372 L180 380"></path>
+    <path d="M124 372 Q141 296 148 252 Q150 242 140 222"></path>
+    <path d="M176 372 Q159 296 152 252 Q150 242 160 222"></path>
+    <path d="M144 222 Q149 242 150 262 M156 222 Q151 242 150 262 M150 262 L150 372" stroke-width="0.9"></path>
+    <path d="M124 214 Q131 220 140 222 M176 214 Q169 220 160 222" stroke-width="0.9"></path>
+    <path d="M123 208 L177 208 M124 214 L176 214 M123 208 L124 214 M177 208 L176 214"></path>
+    <path d="M133 209 L133 213 M142 209 L142 213 M150 209 L150 213 M158 209 L158 213 M167 209 L167 213" stroke-width="0.4" opacity="0.5"></path>
+    <path d="M123 208 Q126 197 144 194 M177 208 Q174 197 156 194"></path>
+    <path d="M143 194 L157 194 M144 189 L156 189 M144 189 L144 194 M156 189 L156 194" stroke-width="0.7"></path>
+    <path d="M148.5 189 L150 163 M151.5 189 L150 163"></path>
+    
+    <path d="M636 380 L636 206 L688 206 L688 380"></path>
+    <path d="M643 206 L643 192 L681 192 L681 206"></path>
+    <path d="M649 192 L662 170 L675 192"></path>
+    <path d="M651 212 L651 376 M662 212 L662 376 M673 212 L673 376" stroke-width="0.4" opacity="0.55"></path>
+    
+    <path d="M700 380 L700 196 Q724 180 748 196 L748 380"></path>
+    <path d="M712 190 L712 376 M724 185 L724 376 M736 190 L736 376" stroke-width="0.4" opacity="0.55"></path>
+    
+    <path d="M830 380 L830 158 L856 158 L856 126 L884 126 L884 142 L908 142 L908 380"></path>
+    <path d="M856 164 L856 376 M870 132 L870 376 M884 148 L884 376" stroke-width="0.45" opacity="0.55"></path>
+    <path d="M830 226 L908 226 M830 302 L908 302" stroke-width="0.4" opacity="0.4"></path>
+    
+    <path d="M985 196 L985 210"></path>
+    <path d="M985 210 L967 258 L1003 258 Z"></path>
+    <path d="M979 236 L991 236" stroke-width="0.6"></path>
+    <path d="M964 258 L1006 258"></path>
+    <path d="M966 258 L966 267 M1004 258 L1004 267 M966 267 L1004 267" stroke-width="0.7"></path>
+    <path d="M969 267 L969 340 M1001 267 L1001 340"></path>
+    <path d="M977 271 L977 338 M985 271 L985 338 M993 271 L993 338" stroke-width="0.4" opacity="0.55"></path>
+    <path d="M964 340 L1006 340" stroke-width="0.7"></path>
+    <path d="M969 340 L969 346 M1001 340 L1001 346"></path>
+    <path d="M954 346 L1016 346 M954 346 L954 380 M1016 346 L1016 380"></path>
+    <path d="M961 352 L961 376 M968 352 L968 376 M1002 352 L1002 376 M1009 352 L1009 376" stroke-width="0.4" opacity="0.55"></path>
+    
+    <path d="M1084 356 Q1130 296 1176 356"></path>
+    <path d="M1094 356 Q1130 308 1164 356" stroke-width="0.8"></path>
+    <path d="M1084 356 L1176 356 M1090 356 L1090 380 M1170 356 L1170 380" stroke-width="0.8"></path>
+  </g>
+
+  
+  <g fill="none" stroke="url(#skyGrad)" stroke-width="1.3">
+    <circle cx="520" cy="328" r="44"></circle>
+    <circle cx="520" cy="328" r="4"></circle>
+    <path d="M520 284 L520 372 M476 328 L564 328 M489 297 L551 359 M489 359 L551 297" stroke-width="0.6" opacity="0.75"></path>
+    <path d="M499 380 L520 332 M541 380 L520 332"></path>
+    <path d="M468 380 L572 380" stroke-width="1"></path>
+    
+    
+    <path d="M30 380 L1190 380" stroke-width="0.9"></path>
+    <path d="M60 398 L130 398 M170 402 L240 402 M400 400 L470 400 M600 404 L670 404 M710 398 L790 398 M840 402 L920 402 M960 396 L1040 396 M1080 400 L1150 400" stroke-width="0.5" opacity="0.35"></path>
+  </g>
+</svg>

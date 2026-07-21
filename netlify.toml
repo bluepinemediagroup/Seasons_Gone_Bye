@@ -1,0 +1,41 @@
+# Netlify configuration — Seasons Gone Bye (static site, no build step)
+
+[build]
+  publish = "."
+  # Pure static HTML/CSS/JS — nothing to compile.
+  command = ""
+
+# Netlify Forms are auto-detected from the static HTML at deploy time
+# (forms carry data-netlify="true" + a hidden form-name field).
+
+# ── Security headers (all routes) ─────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    # Allow only what the site actually uses: Google Fonts, self, inline styles.
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'"
+
+# ── Long-cache the immutable-ish static assets ────────────────
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/tokens/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

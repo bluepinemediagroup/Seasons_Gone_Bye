@@ -1,0 +1,68 @@
+<!-- @dsCard group="Components" viewport="700x560" subtitle="Button, Input, Card, CourtBadge, Tag, Tabs, Switch, EpisodeRow" name="Core components" -->
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+<script src="../../ds-fallback-loader.js"></script>
+<style>body{margin:0;background:var(--dusk-0);font-family:var(--font-body)}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+function Boot() {
+  const [ns, setNs] = React.useState(null);
+  React.useEffect(() => {
+    let done = false;
+    bootSGB('../../', [], v => v.Button && v.CourtBadge)
+      .then(n => { if (!done) setNs(n); })
+      .catch(e => console.error(e));
+    return () => { done = true; };
+  }, []);
+  if (!ns) return <div style={{padding:20,font:'400 12px var(--font-mono)',color:'var(--text-low)'}}>bundle loading…</div>;
+  return <Demo ns={ns} />;
+}
+const Label = ({children}) => <div style={{font:'500 10px var(--font-ui)',letterSpacing:'2px',textTransform:'uppercase',color:'var(--text-low)',margin:'0 0 8px'}}>{children}</div>;
+function Demo({ ns }) {
+  const { Button, Input, Card, CourtBadge, Tag, Tabs, Switch, EpisodeRow } = ns;
+  const [tab, setTab] = React.useState(0);
+  const [on, setOn] = React.useState(true);
+  const [playing, setPlaying] = React.useState(1);
+  return (
+    <div style={{padding:20,display:'flex',flexDirection:'column',gap:20}}>
+      <div style={{display:'flex',gap:32}}>
+        <div><Label>Buttons</Label>
+          <div style={{display:'flex',gap:10,alignItems:'center',flexWrap:'wrap'}}>
+            <Button variant="primary">Listen now</Button>
+            <Button variant="secondary">Subscribe</Button>
+            <Button variant="ghost">All episodes</Button>
+            <Button variant="primary" size="sm">Play</Button>
+            <Button variant="primary" disabled>Sold out</Button>
+          </div>
+        </div>
+      </div>
+      <div style={{display:'flex',gap:32,alignItems:'flex-end'}}>
+        <div style={{flex:1}}><Label>Input</Label><Input label="Your name" placeholder="As the courts know you" /></div>
+        <div><Label>Switch</Label><Switch checked={on} onChange={setOn} label="Notify me at moonset" /></div>
+        <div><Label>Tags</Label><div style={{display:'flex',gap:8}}><Tag>43:12</Tag><Tag tone="teal">SIDE A</Tag><Tag tone="pink">NEW</Tag></div></div>
+      </div>
+      <div><Label>Court badges</Label>
+        <div style={{display:'flex',gap:20,flexWrap:'wrap'}}>
+          <CourtBadge court="spring" /><CourtBadge court="summer" /><CourtBadge court="autumn" /><CourtBadge court="winter" /><CourtBadge court="unseen" />
+        </div>
+      </div>
+      <div><Label>Tabs</Label><Tabs items={['Episodes','The Courts','Lore']} active={tab} onChange={setTab} /></div>
+      <div style={{display:'flex',gap:20}}>
+        <div style={{flex:1}}><Label>Card</Label><Card eyebrow="The Winter Court" title="Floor 35">Holds the door in the cold months. Visitors are asked not to whistle in the elevator.</Card></div>
+        <div style={{flex:1}}><Label>Card · glow</Label><Card glow eyebrow="Featured" title="Last Call at Moonset">The Autumn regent misses a payment, and the café's coffee starts coming out cold.</Card></div>
+      </div>
+      <div><Label>Episode rows</Label>
+        <div style={{border:'1px solid var(--border-subtle)',borderBottom:'none'}}>
+          <EpisodeRow number="EP.08" title="The Elevator Only Goes Up" court="unseen" duration="47:03" date="04.94" playing={playing===0} onPlay={()=>setPlaying(0)} />
+          <EpisodeRow number="EP.07" title="Last Call at Moonset" court="winter" duration="43:12" date="03.94" playing={playing===1} onPlay={()=>setPlaying(1)} />
+          <EpisodeRow number="EP.06" title="A Receipt from 1889" court="autumn" duration="39:44" date="03.94" playing={playing===2} onPlay={()=>setPlaying(2)} />
+        </div>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Boot />);
+</script></body></html>

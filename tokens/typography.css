@@ -1,0 +1,20 @@
+:root {
+  --font-display: 'Cinzel Decorative', serif;      /* wordmark, H1, court names */
+  --font-ui: 'Oswald', sans-serif;                  /* nav, labels, buttons — ALWAYS uppercase + tracked */
+  --font-body: 'Libre Franklin', sans-serif;        /* body copy, weight 300/400 */
+  --font-serif: 'Cormorant Garamond', serif;        /* editorial pull-quotes, episode loglines */
+  --font-mono: 'Courier Prime', monospace;          /* tape annotations, dates, footnotes */
+
+  /* Type scale (desktop) */
+  --text-hero: 700 52px/1.1 var(--font-display);
+  --text-h1: 700 36px/1.15 var(--font-display);
+  --text-h2: 400 26px/1.25 var(--font-display);
+  --text-quote: 500 26px/1.25 var(--font-serif);
+  --text-body-lg: 300 17px/1.65 var(--font-body);
+  --text-body-md: 400 14.5px/1.6 var(--font-body);
+  --text-label: 500 12px/1.2 var(--font-ui);        /* + --tracking-label + uppercase */
+  --text-mono-sm: 400 12.5px/1.6 var(--font-mono);
+
+  --tracking-label: 2.5px;
+  --tracking-wide: 5px;   /* eyebrow lines, e.g. "SMITH TOWER · 1994" */
+}

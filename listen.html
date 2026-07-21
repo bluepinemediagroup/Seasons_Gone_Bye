@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listen — Seasons Gone Bye</title>
+<meta name="description" content="Where to hear Seasons Gone Bye when season one drops — Apple Podcasts, Spotify, and the open RSS feed. Or take a seat at the counter and we'll tell you the moment the doors open.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/css/site.css">
+<meta name="theme-color" content="#11141f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Listen — Seasons Gone Bye">
+<meta property="og:description" content="City of rain, city of doors — both open after dark. Season one opens at moonset.">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <nav class="site-nav" aria-label="Primary">
+    <a class="site-nav__brand" href="/index.html">Seasons Gone Bye</a>
+    <button class="site-nav__toggle" type="button" aria-controls="nav-links" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="site-nav__links" id="nav-links">
+      <a class="site-nav__link" href="/about.html">The Story</a>
+      <a class="site-nav__link" href="/listen.html" aria-current="page">Listen</a>
+      <a class="site-nav__link" href="/merch.html">Merch</a>
+      <a class="site-nav__link" href="/index.html#discord" rel="noopener">Discuss</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- Header -->
+  <section class="hero">
+    <div class="hero__streak hero__streak--pink" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero__inner">
+        <p class="eyebrow">Tune the dial</p>
+        <h1 class="h1" style="margin-top:18px">Where to hear it,<br><span class="neon-gradient">when the doors open.</span></h1>
+        <p class="lede" style="margin-top:20px">Season one hasn't dropped yet. When it does, it airs everywhere at once — and the regulars hear first.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trailer slot -->
+  <section class="section--tight">
+    <div class="wrap">
+      <div class="card card--glow">
+        <p class="card__eyebrow">The trailer</p>
+        <p class="card__title">A minute at the counter, before the tape rolls.</p>
+        <div class="card__body">
+          <div class="transmission">
+            <span class="tag tag--pink">SIDE A</span>
+            <span class="transmission__bar" aria-hidden="true"></span>
+            <span class="tag">01:12</span>
+          </div>
+          <!-- TODO: embed the real trailer (audio player / YouTube) when available -->
+          <p style="margin-top:16px">The trailer is being mastered. Drop your name below and it lands in your inbox the day it goes live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platforms -->
+  <section class="section--tight">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--plain" style="margin-bottom:16px">Subscribe ahead</p>
+      <div class="grid grid--3">
+        <!-- TODO: replace href="#" with the real show URLs at launch -->
+        <a class="platform" href="#" rel="noopener">
+          <svg class="platform__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="11" r="3.2"/><path d="M9.5 16.5c1.5 1 3.5 1 5 0"/></svg>
+          <span class="platform__name">Apple Podcasts</span>
+          <span class="tag platform__meta">SOON</span>
+        </a>
+        <a class="platform" href="#" rel="noopener">
+          <svg class="platform__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7.5 9.5c3-1 6-.8 8.5.7"/><path d="M8 12.5c2.4-.8 4.8-.6 6.8.6"/><path d="M8.5 15.3c1.9-.6 3.7-.4 5.3.5"/></svg>
+          <span class="platform__name">Spotify</span>
+          <span class="tag platform__meta">SOON</span>
+        </a>
+        <a class="platform" href="#" rel="noopener">
+          <svg class="platform__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="6" cy="18" r="2.2"/><path d="M4 12a8 8 0 0 1 8 8"/><path d="M4 6a14 14 0 0 1 14 14"/></svg>
+          <span class="platform__name">RSS feed</span>
+          <span class="tag platform__meta">SOON</span>
+        </a>
+      </div>
+      <p class="mono" style="margin-top:14px">Links go live the day season one airs.</p>
+    </div>
+  </section>
+
+  <!-- Newsletter (primary CTA, Netlify Forms) -->
+  <section class="section" id="regulars">
+    <div class="wrap">
+      <div class="card">
+        <p class="card__eyebrow">The regulars' list</p>
+        <p class="card__title">Hear it before the city does.</p>
+        <div class="card__body">
+          <p>One letter per moon. The drop date, the trailer, and the first episode — sent to the counter first.</p>
+          <form name="regulars" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                data-success="You are on the list. Watch for a letter at moonset."
+                action="/listen.html#regulars">
+            <input type="hidden" name="form-name" value="regulars">
+            <p class="hp-field" aria-hidden="true"><label>Leave this empty <input name="bot-field"></label></p>
+            <div class="signup-row">
+              <label class="field">
+                <span class="field__label">Email</span>
+                <input type="email" name="email" placeholder="you@rainy.city" autocomplete="email" required>
+              </label>
+              <button class="btn btn--secondary" type="submit">Cross the threshold</button>
+            </div>
+            <p class="mono form-note">No spam. No glamour. Unsubscribe at any door.</p>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="site-footer">
+    <div class="site-footer__links">
+      <a class="site-footer__link" href="/about.html">The Story</a>
+      <a class="site-footer__link" href="/listen.html">Listen</a>
+      <a class="site-footer__link" href="/merch.html">Merch</a>
+      <a class="site-footer__link" href="/index.html#discord">Discuss</a>
+    </div>
+    <span class="mono">SEASONS GONE BYE · A FICTION PODCAST · SMITH TOWER, SEATTLE · MCMXCIV</span>
+    <span class="mono">© 1994 BLUE PINE MEDIA GROUP</span>
+  </div>
+</footer>
+
+<script src="/js/site.js" defer></script>
+</body>
+</html>

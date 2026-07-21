@@ -1,0 +1,23 @@
+:root {
+  /* Neon glows — text-shadow for type, box-shadow for fills/strokes */
+  --glow-pink: 0 0 14px rgba(233, 63, 155, .85), 0 0 44px rgba(233, 63, 155, .45);
+  --glow-pink-soft: 0 0 12px rgba(233, 63, 155, .6);
+  --glow-teal: 0 0 14px rgba(47, 196, 167, .95);
+  --glow-teal-soft: 0 0 10px rgba(47, 196, 167, .6);
+  --glow-dual: 0 0 12px rgba(233, 63, 155, .6), 0 0 12px rgba(47, 196, 167, .4);
+  --glow-button-pink: 0 0 14px rgba(233, 63, 155, .45);
+  --glow-button-teal: 0 0 14px rgba(47, 196, 167, .5);
+  /* Dark halo to keep type legible over the tower mark / imagery */
+  --halo-dark: 0 2px 14px rgba(7, 9, 11, 1), 0 2px 24px rgba(7, 9, 11, .9);
+
+  /* Atmospheric washes (background-image values) */
+  --wash-club: radial-gradient(ellipse at 15% 110%, rgba(233,63,155,.30), transparent 55%), radial-gradient(ellipse at 85% -10%, rgba(47,196,167,.24), transparent 55%);
+  --wash-twilight: linear-gradient(200deg, rgba(47,196,167,.12), transparent 42%), linear-gradient(20deg, rgba(233,63,155,.16), transparent 46%);
+  --wash-card: radial-gradient(ellipse at 100% 0%, rgba(47,196,167,.12), transparent 50%), radial-gradient(ellipse at 0% 100%, rgba(233,63,155,.12), transparent 50%);
+  --wash-tealink: radial-gradient(ellipse at 50% 120%, rgba(47,196,167,.28), transparent 60%), radial-gradient(ellipse at 50% -20%, rgba(233,63,155,.18), transparent 55%);
+
+  /* Motion: slow, cinematic; light behaves like light */
+  --ease-out: cubic-bezier(.22, .61, .36, 1);
+  --duration-fast: 150ms;
+  --duration-slow: 400ms;
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merch — Seasons Gone Bye</title>
+<meta name="description" content="Gig posters, tees, and pins from the Seasons Gone Bye café and the four courts. Deep teal ink, one electric interruption. Coming with season one.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/css/site.css">
+<meta name="theme-color" content="#0e2422">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Merch — Seasons Gone Bye">
+<meta property="og:description" content="Deep teal ink, one electric interruption. Gig posters and threads from Smith Tower.">
+</head>
+<!-- Teal-ink world: the poster/merch surface treatment -->
+<body class="world-tealink">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <nav class="site-nav" aria-label="Primary">
+    <a class="site-nav__brand" href="/index.html">Seasons Gone Bye</a>
+    <button class="site-nav__toggle" type="button" aria-controls="nav-links" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="site-nav__links" id="nav-links">
+      <a class="site-nav__link" href="/about.html">The Story</a>
+      <a class="site-nav__link" href="/listen.html">Listen</a>
+      <a class="site-nav__link" href="/merch.html" aria-current="page">Merch</a>
+      <a class="site-nav__link" href="/index.html#discord" rel="noopener">Discuss</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- Header -->
+  <section class="hero">
+    <div class="hero__streak hero__streak--teal" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero__inner">
+        <p class="eyebrow">The merch counter</p>
+        <h1 class="h1" style="margin-top:18px">Deep teal ink.<br><span class="neon-gradient">One electric interruption.</span></h1>
+        <p class="lede" style="margin-top:20px">Gig posters, threads, and pins from the café and the four courts — printed like a flyer stapled to a Belltown pole in '94.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product grid (coming soon) -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--plain" style="margin-bottom:18px">Opening with season one</p>
+      <div class="grid grid--3">
+        <article class="card">
+          <div class="merch-thumb"><span class="mono">POSTER · 18×24</span></div>
+          <p class="card__title" style="font-size:19px">The Tower, Lit</p>
+          <div class="card__body">
+            <span class="badge-soon">Coming soon</span>
+            <p style="margin-top:10px">Smith Tower in a pink-to-teal glow, floors eight to thirty-five named for their courts.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="merch-thumb"><span class="mono">TEE · RING-SPUN</span></div>
+          <p class="card__title" style="font-size:19px">Last Call at Moonset</p>
+          <div class="card__body">
+            <span class="badge-soon">Coming soon</span>
+            <p style="margin-top:10px">The café wordmark on black, cream type, one pink hairline. Nothing that couldn't exist in 1994.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="merch-thumb"><span class="mono">PIN SET · 4</span></div>
+          <p class="card__title" style="font-size:19px">The Four Courts</p>
+          <div class="card__body">
+            <span class="badge-soon">Coming soon</span>
+            <p style="margin-top:10px">Enamel dots — spring, summer, autumn, winter. Wear your allegiance; the courts are watching.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="merch-thumb"><span class="mono">POSTER · 18×24</span></div>
+          <p class="card__title" style="font-size:19px">A Receipt from 1889</p>
+          <div class="card__body">
+            <span class="badge-soon">Coming soon</span>
+            <p style="margin-top:10px">Tape-box typography and a till receipt that prints twice. The second one is older.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="merch-thumb"><span class="mono">MUG · CERAMIC</span></div>
+          <p class="card__title" style="font-size:19px">Two Sets of Hours</p>
+          <div class="card__body">
+            <span class="badge-soon">Coming soon</span>
+            <p style="margin-top:10px">The café's counter mug. The hours on the glass, and the hours the regulars know.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="merch-thumb"><span class="mono">STICKER · DIE-CUT</span></div>
+          <p class="card__title" style="font-size:19px">The Unseen</p>
+          <div class="card__body">
+            <span class="badge-soon">Coming soon</span>
+            <p style="margin-top:10px">One pink sigil for the boundary you're not supposed to see. Slap it somewhere the courts won't.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notify (Netlify Forms) -->
+  <section class="section--tight" id="notify">
+    <div class="wrap">
+      <div class="card">
+        <p class="card__eyebrow">First dibs</p>
+        <p class="card__title">Know when the counter opens.</p>
+        <div class="card__body">
+          <p>The store unlocks with season one. Leave your name and you'll get the drop before it sells through.</p>
+          <form name="merch-notify" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                data-success="Noted. You'll hear when the counter opens."
+                action="/merch.html#notify">
+            <input type="hidden" name="form-name" value="merch-notify">
+            <p class="hp-field" aria-hidden="true"><label>Leave this empty <input name="bot-field"></label></p>
+            <div class="signup-row">
+              <label class="field">
+                <span class="field__label">Email</span>
+                <input type="email" name="email" placeholder="you@rainy.city" autocomplete="email" required>
+              </label>
+              <button class="btn btn--secondary" type="submit">Notify me</button>
+            </div>
+            <p class="mono form-note">One message, when the store opens. Nothing else.</p>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="site-footer">
+    <div class="site-footer__links">
+      <a class="site-footer__link" href="/about.html">The Story</a>
+      <a class="site-footer__link" href="/listen.html">Listen</a>
+      <a class="site-footer__link" href="/merch.html">Merch</a>
+      <a class="site-footer__link" href="/index.html#discord">Discuss</a>
+    </div>
+    <span class="mono">SEASONS GONE BYE · A FICTION PODCAST · SMITH TOWER, SEATTLE · MCMXCIV</span>
+    <span class="mono">© 1994 BLUE PINE MEDIA GROUP</span>
+  </div>
+</footer>
+
+<script src="/js/site.js" defer></script>
+</body>
+</html>

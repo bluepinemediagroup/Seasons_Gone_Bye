@@ -1,0 +1,54 @@
+:root {
+  /* ── Night (podcast tiles, icons, social) ─────────────── */
+  --night-0: #07090b;        /* tile black */
+  --night-1: #0d1116;        /* raised panel */
+  --night-border: #1d2429;
+
+  /* ── Rain-slick twilight (website world) ──────────────── */
+  --dusk-0: #11141f;         /* page */
+  --dusk-1: #161a29;         /* card / panel */
+  --dusk-2: #1c2136;         /* hover / raised */
+  --dusk-border: #262c42;
+
+  /* ── Deep teal ink (posters, merch) ───────────────────── */
+  --tealink-0: #0a1516;
+  --tealink-1: #0e2422;
+  --tealink-2: #133430;
+  --tealink-border: #1b3d39;
+
+  /* ── Neon accents ─────────────────────────────────────── */
+  --neon-pink: #e93f9b;
+  --neon-pink-bright: #f4a7cf;
+  --neon-pink-halo: #fce6f2;  /* hottest core of a pink glow */
+  --neon-teal: #2fc4a7;
+  --neon-teal-bright: #7fd8c8;
+  --neon-teal-halo: #dcfaf2;
+
+  /* ── Cream (the only warm neutral; never a surface) ───── */
+  --cream: #f5efe4;
+
+  /* ── Text on dark ─────────────────────────────────────── */
+  --text-hi: #f2ecf6;
+  --text-mid: #aab4cd;
+  --text-low: #7c88a3;
+  --text-on-tealink: #9fc4bc; /* mid text on teal-ink surfaces */
+  --text-on-neon: #07090b;    /* text sitting on a neon fill */
+
+  /* ── The four courts ──────────────────────────────────── */
+  --court-spring: #2fc4a7;
+  --court-summer: #f0a12e;
+  --court-autumn: #e0642f;
+  --court-winter: #7fb3d6;
+
+  /* ── Semantic aliases (default = website / twilight) ──── */
+  --surface-page: var(--dusk-0);
+  --surface-card: var(--dusk-1);
+  --surface-raised: var(--dusk-2);
+  --border-subtle: var(--dusk-border);
+  --accent: var(--neon-pink);
+  --accent-2: var(--neon-teal);
+  --text-body: var(--text-mid);
+  --text-heading: var(--text-hi);
+  --link: var(--neon-teal-bright);
+  --link-hover: var(--neon-pink-bright);
+}
