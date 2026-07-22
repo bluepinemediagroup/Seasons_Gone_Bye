@@ -1,7 +1,10 @@
 # Netlify configuration — Seasons Gone Bye (static site, no build step)
 
 [build]
-  publish = "."
+  # ALLOWLIST: only public/ is ever served. Brand PDFs, the source zip,
+  # uploads/, and the internal design system stay in the repo but are
+  # never published. Add new public files to public/ only.
+  publish = "public"
   # Pure static HTML/CSS/JS — nothing to compile.
   command = ""
 

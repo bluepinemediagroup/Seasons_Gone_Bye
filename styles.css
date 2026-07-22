@@ -1,5 +1,11 @@
-@import "tokens/fonts.css";
-@import "tokens/colors.css";
-@import "tokens/typography.css";
-@import "tokens/spacing.css";
-@import "tokens/effects.css";
+/* Root shim — design-system reference files (Brand Guide.html, guidelines/*,
+   ui_kits/*, components/*) link to this path. The canonical tokens now live
+   in public/tokens/ so they can be deployed; this re-exports them so the
+   internal reference docs keep rendering unchanged.
+
+   The deployed site loads public/styles.css instead. */
+@import "public/tokens/fonts.css";
+@import "public/tokens/colors.css";
+@import "public/tokens/typography.css";
+@import "public/tokens/spacing.css";
+@import "public/tokens/effects.css";
