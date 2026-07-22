@@ -8,3 +8,8 @@
 # Editor / OS noise
 *.swp
 Thumbs.db
+
+# Private working / governance docs — keep out of the public repo
+CLAUDE.md
+PLAN.md
+MEMORY.md
